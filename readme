@@ -1,0 +1,19 @@
+Thanks for taking a look at this treasure hunt game! 
+
+Objective
+Navigate the board to find the treasure. 
+
+Included:
+1. *new* Click button to start game 
+2. Prompt to enter user name
+3. Set user location at bottom left corner
+4. *new* Hide treasure in random location 
+5. Prompt to enter direction and perform checks:
+  - Alert user if invalid entry
+  - *new* Alert user if move is off board
+6. Update location and prompt for new move until user finds treasure
+7. *new* When found, congratulate user and reset game to start over 
+
+Of note:
+- *Known issue* - User starting location and treasure location can match at the start of the game, but shouldn't because the 'win' isn't detected
+- *Spoiler alert* - Console will tell you where the treasure is! I instrumented write to console for name, user location, and treasure location at each loop to log behavior. If you want to avoid the spoiler, then don't open console :).

@@ -2,8 +2,6 @@
 var maxX = 3;
 var maxY = 3;
 
-
-
 //Flag that controls start of game
 var startHunt = false;
 
@@ -13,7 +11,7 @@ var treasureFound = false;
 //Function for button click to start game, resets user and treasure location
 function checkStart() {
 
-  while(!startHunt) {
+  while(!startHunt){
     
     //prompt for name at start of game
     var name = prompt("Welcome! What's your name?");
@@ -89,12 +87,12 @@ function checkStart() {
       if(newX >= 0 && newY >= 0 && newX <= maxX && newY <= maxY){
         userX = newX;
         userY = newY;
-      }else {
+      }else{
         console.log("Thar be a black hole! You can't go that direction.")
         alert("Thar be a black hole! You can't go that direction.")
       }
 
-    }else {
+    }else{
       console.log("Please enter a real direction.");
       alert("Please enter a real direction.");      
     }
